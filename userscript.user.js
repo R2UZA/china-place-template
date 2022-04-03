@@ -1,11 +1,11 @@
 // ==UserScript==
-// @name         china_place combo
+// @name         cltv combo
 // @namespace    http://tampermonkey.net/
-// @version      0.3
+// @version      0.4
 // @description  Userscript for r/china_place
 // @author       china-place
-// @updateURL    https://github.com/china-place/china-place-template/raw/main/userscript.user.js
-// @downloadURL  https://github.com/china-place/china-place-template/raw/main/userscript.user.js
+// @updateURL    https://github.com/R2UZA/china-place-template/raw/main/userscript.user.js
+// @downloadURL  https://github.com/R2UZA/china-place-template/raw/main/userscript.user.js
 // @match        https://hot-potato.reddit.com/embed*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=reddit.com
 // @grant        none
@@ -21,9 +21,9 @@ if (window.top !== window.self) {
           (() => {
             const i = document.createElement('img');
             i.src =
-              'https://raw.githubusercontent.com/china-place/china-place-template/main/output.png';
+              'https://raw.githubusercontent.com/R2UZA/china-place-template/main/output.png';
             i.style =
-              'position: absolute;left: 0;top: 0;image-rendering: pixelated;width: 2000px;height: 1000px;';
+              'position: absolute;left: 0;top: 0;image-rendering: pixelated;width: 2000px;height: 2000px;';
             return i;
           })()
         );
